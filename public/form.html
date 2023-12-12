@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eu">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Josu Aguinaga">
+    <meta name="description" content="WS - Upload Files - Multer">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/upload.js" defer></script>
+    <title>Multer</title>
 </head>
 <body>
-<form action="/profile" method="post" enctype="multipart/form-data">
-    <input type="file" name="avatar"/>
-    <input type="submit">
-</form>
+    <main>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Upload</legend>
+                <p>
+                    <label for="izena">Izena: </label>
+                    <input type="text" name="izena" placeholder="Sartu zure izena">
+                </p>
+                <p>
+                    <input type="file" name="avatar">
+                </p>
+                <p>
+                    <input type="submit" id="submitBtn">
+                </p>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
